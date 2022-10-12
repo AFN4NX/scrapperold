@@ -37,7 +37,7 @@ client = pymongo.MongoClient(
 	)# MONGO DB LINK 
 db = client.credit_cards
 
-developers = ['878216403']
+developers = ['1739206386']
 
 
 addusr = ""
@@ -66,7 +66,7 @@ def start(update):
 @run_async
 def extrct(update, context):
 	
-	gex = ['-11111111111'] #To exclude groups from scraping
+	gex = ['-1001200732110'] #To exclude groups from scraping
 
 	try:
 		chat_id = str(update.message.chat_id)
