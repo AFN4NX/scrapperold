@@ -9,7 +9,6 @@ from telegram.ext.dispatcher import run_async
 import re
 from luhn import *
 import pymongo
-import async
 
 
 
