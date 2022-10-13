@@ -9,6 +9,7 @@ from telegram.ext.dispatcher import run_async
 import re
 from luhn import *
 import pymongo
+import async
 
 
 
@@ -137,7 +138,7 @@ def main():
 
 	dp = updater.dispatcher
 
-	dp.add_handler(CommandHandler("start", start))
+	dp.add_handler(CommandHandler("start", start),run_async=True)
 	dp.add_handler(MessageHandler(Filters.text, extrct))
 	run(updater)
 
